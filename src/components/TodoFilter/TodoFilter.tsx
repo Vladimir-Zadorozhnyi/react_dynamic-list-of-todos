@@ -42,6 +42,7 @@ export const TodoFilter: React.FC<TodoFilterProps> = ({
 
   useEffect(() => {
     handleFilterTodos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter, query, todos]);
   const handleChangeFilter = useCallback(
     (event: React.ChangeEvent<HTMLSelectElement>) => {
